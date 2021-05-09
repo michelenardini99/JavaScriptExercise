@@ -1,0 +1,37 @@
+body{    /* gli elementi nel body avranno font Montserrat */
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    background-color: turquoise;
+}
+
+h1,h3{      /* Definisco che gli elementi nel tag <h1> avranno colore rosso */
+    font-family: "Lato", sans-serif;
+    color: red;
+}
+
+h3{  
+    color:royalblue;
+    background-color:wheat;
+}
+
+p{
+    font-weight: 700;
+}
+
+table,th,td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+tbody{
+    color: sienna;
+}
+
+thead{
+    text-transform: uppercase;
+}
+
+#titolo{
+    text-transform: uppercase;
+    text-align: center;
+}

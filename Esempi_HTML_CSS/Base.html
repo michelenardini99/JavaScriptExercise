@@ -1,0 +1,121 @@
+<!DOCTYPE html> <!-- dice che il file è una pagina HTML e in particolare che si tratta di un documento secondo lo standard HTML5 -->
+<html lang="it">  <!-- È il tag che racchiude tutta la pagina e ci permette ad esempio di definire quale sia la lingua della pagina -->
+<head>  <!-- Questo tag contiene una serie di informazioni utili per la gestione della pagina -->
+    <meta charset="uft-8">  <!-- Definisco il tipo di codifica dei caratteri-->
+<title>Prima pagina in HTML</title>
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>  <!-- Contiene gli elementi della pagina, tutto il contenuto e tutti i relativi tag -->
+    <section>   <!-- L’elemento <section> individua un raggruppamento tematico di contenuti,ed in genere contiene un titolo introduttivo. -->
+        <header>    <!-- L’elemento <header> è un contenitore per altri elementi. -->
+            <h1 id="titolo">Bellaaa</h1>
+            <img src="immagini/logo.png">  <!-- tag per inserimento di immagini -->
+            <nav>
+                <ul>    <!-- definisco una lista non ordinata -->
+                    <li>Home</li>
+                    <li>Chi sono</li>
+                    <li>Mi piace...
+                        <ul>
+                            <li>Passeggiare</li>
+                            <li><a href="#Sono_bellissimo">Cagare</a></li>  <!-- il link porta al contenuto con id definito -->
+                        </ul>
+                    </li>
+                    <li>Giochi</li>
+                    <li>Link my brozza
+                        <ul>
+                            <li><a href="https://it.wikipedia.org/wiki/Luca_era_gay">Luca gay</a></li>  <!-- a href per mettere link in una frase -->
+                            <li><a href="https://it.wikipedia.org/wiki/Luca_era_gay" target="_blank">Luca gay pt. 2</a></li>
+                            <!-- target="_blank" ti permette di aprire una nuova scheda cliccando il link-->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>    <!-- una sezione contenente link di navigazione -->
+        </header>
+    </section>
+    <section>
+        <div>
+            <h1>Pagina del gatto che fa miao</h1>
+            <table> <!-- definisco la parte di paginadove inserirò una tabella -->
+                <thead> <!-- definisco la riga di intestazione della tabella -->
+                    <tr>    <!-- definisco la riga -->
+                        <td>Domenica</td>   <!-- definisco gli elementi della tabella in una determinata riga-->
+                        <td>Lunedì</td>
+                        <td>Martedì</td>
+                        <td>Mercoledì</td>
+                        <td>Giovedì</td>
+                        <td>Venerdì</td>
+                        <td>Sabato</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pollo</td> 
+                        <td>Tacchino</td>
+                        <td>Riso</td>
+                        <td>Pizza</td>
+                        <td>Sushi</td>
+                        <td>Salsiccia</td>
+                        <td>Luca Gay</td>
+                    </tr>
+                    <tr>
+                        <td>Ragù</td> 
+                        <td>Cani</td>
+                        <td>Gatti</td>
+                        <td>Mucce</td>
+                        <td>Bestie</td>
+                        <td>Ragni</td>
+                        <td>Patate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>Video carino</h3>
+        <div>
+            <video width="250" height="200" controls autoplay="1">
+                <source src="media/video1.mp4">
+            </video>
+        </div>
+        <div>
+            <h1>Sono un titolo di livello 1</h1>    <!-- definisce un titolo di livello 1(il livello definisce la grandezza)-->
+            <p>Io sono un elemento di blocco</p>  <!-- <p> definisce un paragrafo -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Vivamus vulputate, elit id varius ornare, 
+                magna risus sodales nulla, sed feugiat urna eros ac magna.</b> <i>Sed placerat leo sed ipsum pharetra, 
+                at mattis purus sagittis.</i> Vivamus sagittis fermentum diam, <small> maximus justo facilisis nec</small>. <strong>
+                pulvinar ac nisi nec porta.</strong> Aliquam tincidunt eros a varius dictum. <em>Pellentesque ut dui volutpat tortor 
+                feugiat fringilla sollicitudin a purus.</em> Quisque vel nulla tortor. In posuere ipsum ut nibh maximus eleifend. 
+                Quisque congue tristique dolor.</p>
+                <!-- Differenza strong e b: b è un tag per il semplice grassetto, strong definisce la frase in grassetto come
+                una frase importante, molto utile per il seo, ovvero la ricerca delle pagine web dei motori di ricerca Google,
+                idem per i tag i e em per le frasi in corsivo-->
+                <h1 id="Sono_bellissimo">Sono bellissimo</h1>   <!-- id da la possibilità di identificare un contenuto -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <q>Vivamus vulputate, elit id varius ornare, 
+                    magna risus sodales nulla, sed feugiat urna eros ac magna.Sed placerat leo sed ipsum pharetra, 
+                    at mattis purus sagittis.</q> <blockquote>Vivamus sagittis fermentum diam,  maximus justo facilisis nec.
+                    pulvinar ac nisi nec porta. Aliquam tincidunt eros a varius dictum. Pellentesque ut dui volutpat tortor 
+                    feugiat fringilla sollicitudin a purus. Quisque vel nulla tortor.</blockquote> In posuere ipsum ut nibh maximus eleifend. 
+                    Quisque congue tristique dolor.</p>
+                    <!-- il tag <q> definisce una citazione nella formula << Testo... >> mentre <blockquote> scrive la citazione centrando la frase -->
+        </div>
+        <!-- SIdebar -->
+        <div>
+            <h1>I miei brozza</h1>
+            <ol>    <!-- Definisce una lista ordinata-->
+                <li>Non luca</li>
+                <li>Forse quel gay di Luca</li>
+                <li>Luca gay</li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <h4>Io sono un titolo di livello 4</h4>
+        <div>Contatti</div>
+        <div>Link ai miei social</div>
+    </section>
+    <footer>
+        <p>Via delle genziane 10</p>
+        <p>RA, FC 48015</p>
+    </footer>    <!-- Il footer corrisponde alla parte bassa della pagina che di solito contiene
+                                                informazioni di copyright, contatti etc -->
+
+</body>
+</html>
